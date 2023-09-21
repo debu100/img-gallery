@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio Img Gallery</title>
+	<style type="text/css">
+		
+		.container{
+			max-width: 960px;
+			margin: 20px auto;
+		}
+
+		.img-container{
+			columns: 3;
+			column-gap: 15px;
+		}
+
+		.img-box{
+			margin-bottom: 15px;
+			position: relative;
+		}
+
+		img{
+			width: 100%;
+		}
+
+		.overlay{
+			background: rgba(0, 0, 0, 0.6);
+			position: absolute;
+			top: 55%;
+			left: 0;
+			bottom: 3px;
+			right: 0;
+			opacity: 0;
+			text-align: center;
+			color: #fff;
+		}
+
+		.overlay:hover{
+			opacity: 1;
+
+		}
+
+		@media(max-width:992px){
+			.img-container{
+			columns: 2;
+/*			width: calc(100% - 40px);*/
+		}
+		}
+
+				@media(max-width:768px){
+			.img-container{
+			columns: 1;
+/*			width: calc(100% - 40px);*/
+		}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="img-container">
+			<div class="img-box">
+				<img src="./images./portfolio-1.jpg">
+				<div class="overlay"><h3>Product:Image</h3> <a>Check Details</a></div>
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-6.jpg">
+			<div class="overlay"><h3>Product:Image</h3> <a>Check Details</a></div>
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-2.jpg">
+			<div class="overlay"><h3>Product:Image</h3> <a>Check Details</a></div>
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-5.jpg">
+			<div class="overlay"><h3>Product:Image</h3> <a>Check Details</a></div>
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-9.jpg">
+			<div class="overlay"><h3>Product:Image</h3> <a>Check Details</a></div>
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-3.jpg">
+			<div class="overlay"><h3>Product:Image</h3> <a>Check Details</a></div>
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-4.jpg">
+			<div class="overlay"><h3>Product:Image</h3> <a>Check Details</a></div>
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-7.jpg">
+			<div class="overlay"><h3>Product:Image</h3> <a>Check Details</a></div>
+			</div>
+			<div class="img-box">
+				<img src="./images./portfolio-8.jpg">
+			<div class="overlay"> <h3>Product:Image</h3> <a>Check Details</a> </div>
+			</div>
+		</div>
+	</div>
+	<!-- images direction is from top to bottom not from left to right as like normal case of grid and flexbox -->
+</body>
+</html>
